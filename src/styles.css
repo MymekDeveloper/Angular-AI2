@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background: url("https://placehold.co/100x100/FFFFFF/EFEFEF/png?text=49420");
+  margin: 0px;
+  padding: 0px;
+}
+
+.header__background {
+  background: indigo;
+  color: white;
+  padding: 8px 12px;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main-section {
+  padding: 10px;
+}
+
+.footer {
+  padding: 10px;
+  color: white;
+  background: green;
+  margin-top: auto;
+}
