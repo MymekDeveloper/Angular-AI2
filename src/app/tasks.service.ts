@@ -7,7 +7,7 @@ import {HttpClient} from "@angular/common/http";
   providedIn: 'root'
 })
 export class TasksService {
-  readonly baseUrl = 'http://localhost:49420';
+  readonly baseUrl = 'http://localhost:48420';
 
   constructor(
     private http: HttpClient,
