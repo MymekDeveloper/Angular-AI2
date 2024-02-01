@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {TasksService} from "../tasks.service";
 import {Task} from "../task";
+import {forkJoin, Observable} from "rxjs";
 
 @Component({
   selector: 'app-tasks',
@@ -35,6 +36,31 @@ export class TasksComponent implements OnInit {
 
     this.tasksService.post(this.newTask).subscribe((task) => {
       this.newTask = {};
+      this.ngOnInit();
+    });
+  }
+  handleChange(task: Task) {
+    this.tasksService.put(task).subscribe({
+      error: err => {
+        alert(err);
+        this.ngOnInit();
+      }
+    });
+  }
+
+  archiveCompleted() {
+    const observables: Observable<any>[] = [];
+    for (const task of this.tasks) {
+      if (!task.completed) {
+        continue;
+      }
+
+      task.archived = true;
+      observables.push(this.tasksService.put(task));
+    }
+
+    // refresh page when all updates finished
+    forkJoin(observables).subscribe(() => {
       this.ngOnInit();
     });
   }

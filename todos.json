@@ -8,13 +8,6 @@
       "archived": false
     },
     {
-      "id": "2",
-      "title": "Hello Again World",
-      "deadline": "2000-01-01",
-      "completed": false,
-      "archived": false
-    },
-    {
       "title": "Pierwsze zadanie",
       "deadline": "2022-01-28",
       "completed": true,
@@ -22,18 +15,31 @@
       "id": "86a6"
     },
     {
-      "title": "as",
-      "deadline": "2024-01-30",
-      "completed": false,
-      "archived": false,
-      "id": "49Cc6sR"
-    },
-    {
       "title": "Zadanie",
       "deadline": "2024-01-23",
+      "completed": true,
+      "archived": true,
+      "id": "h-rvVLT"
+    },
+    {
+      "title": "Zadanie 1",
+      "deadline": "2024-02-23",
       "completed": false,
       "archived": false,
-      "id": "h-rvVLT"
+      "id": "KJbiWuj"
+    },
+    {
+      "title": "Zadanie 2",
+      "completed": false,
+      "archived": false,
+      "id": "I1MvKfR"
+    },
+    {
+      "title": "Umyć zęby :)",
+      "deadline": "2024-02-02",
+      "completed": false,
+      "archived": false,
+      "id": "_CsqFVs"
     }
   ]
 }

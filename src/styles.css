@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #008148;
+  --secondary-color: #323B86;
+  --accent-color: #e8e7fa;
+  --shadow-color: #E8E8E8;
+}
+
 body {
   background: url("https://placehold.co/100x100/FFFFFF/EFEFEF/png?text=49420");
   margin: 0px;

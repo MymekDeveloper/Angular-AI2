@@ -1,6 +1,10 @@
 <div class="flex-wrapper">
   <header class="header__background">
     <h1>Backend-Based Task Manager</h1>
+    <nav>
+      <a routerLink="/tasks" routerLinkActive="active">Tasks</a>
+      <a routerLink="/archive" routerLinkActive="active">Archive</a>
+    </nav>
   </header>
   <section class="main-section">
     <router-outlet></router-outlet>

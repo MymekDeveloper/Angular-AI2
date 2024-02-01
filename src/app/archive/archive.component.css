@@ -4,35 +4,6 @@
   padding: 0 10px;
 }
 
-.new-task {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
-  margin-bottom: 20px;
-}
-
-.new-task .form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (min-width: 768px) {
-  .new-task {
-    grid-template-columns: 1fr 1fr auto;
-  }
-
-  .new-task .form-group {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
-  }
-
-  .new-task .form-group .form-control {
-    flex-grow: 1;
-  }
-}
-
 .tasks .task {
   background-color: white;
   border: 1px solid black;
@@ -50,11 +21,6 @@
     grid-template-columns: 3fr 1fr auto;
     grid-template-areas: 'title deadline actions';
   }
-}
-
-.tasks .task.completed {
-  text-decoration: line-through;
-  opacity: 0.5;
 }
 
 .tasks .task .title {
